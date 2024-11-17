@@ -54,7 +54,7 @@ class MainKtTest {
     @Test
     fun testMastercardCardCommissionOverLimit() {
         val result = calcCommission(cardType = "Mastercard", monthlyTransfers = 60_000, transfer = 25_000)
-        assertEquals("Комиссия составит 80 руб.", result)
+        assertEquals("Комиссия составит 50 руб.", result)
     }
 
 }
